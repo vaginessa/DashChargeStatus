@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/activity_main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    tools:context="org.out386.dashchargestats.MainActivity">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true">
+
+        <TextView
+            android:id="@+id/startingTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textSize="16sp"
+            android:gravity="center"
+            tools:text="Dash Charge active" />
+
+        <TextView
+            android:id="@+id/statusTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/startingTv"
+            android:textSize="16sp"
+            android:gravity="center"
+            tools:text="Dash Charging" />
+
+        <TextView
+            android:id="@+id/limitTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/statusTv"
+            android:textSize="16sp"
+            android:gravity="center"
+            tools:text="Current limit:" />
+
+        <TextView
+            android:id="@+id/maxCurrentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/limitTv"
+            android:textSize="16sp"
+            android:gravity="center"
+            tools:text="Max current:" />
+
+        <TextView
+            android:id="@+id/nowCurrentTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/maxCurrentTv"
+            android:textSize="16sp"
+            android:gravity="center"
+            tools:text="Current:" />
+
+        <TextView
+            android:id="@+id/batteryStatusTv"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/nowCurrentTv"
+            android:textSize="16sp"
+            android:gravity="center"
+            tools:text="Battery status:" />
+
+    </RelativeLayout>
+
+</RelativeLayout>
