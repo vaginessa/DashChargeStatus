@@ -28,15 +28,15 @@ public class MainActivity extends Activity {
             switch (code) {
                 case 0:
                     if (tv1.equals("1"))
-                        startingTv.setText("Dash charging started");
+                        startingTv.setText("Dash charging");
                     else
-                        startingTv.setText("Dash charging not started");
+                        startingTv.setText("Slow Charging");
                     break;
                 case 1:
                     if (tv1.equals("1"))
-                        statusTv.setText("Dash charging");
+                        statusTv.setText("Dash charger detected");
                     else
-                        statusTv.setText("Not Dash charging");
+                        statusTv.setText("Dash charger not detected");
                     break;
                 case 2:
                     if (tv1.equals("1"))
