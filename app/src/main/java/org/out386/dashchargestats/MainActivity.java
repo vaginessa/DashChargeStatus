@@ -30,7 +30,7 @@ public class MainActivity extends Activity {
                     if (tv1.equals("1"))
                         startingTv.setText("Dash charging");
                     else
-                        startingTv.setText("Slow Charging");
+                        startingTv.setText("Slow Charging / Discharging");
                     break;
                 case 1:
                     if (tv1.equals("1"))
@@ -45,10 +45,10 @@ public class MainActivity extends Activity {
                         limitTv.setText("Current not limited");
                     break;
                 case 3:
-                    maxTv.setText("Max current in microamps: " + tv1);
+                    maxTv.setText("Max current in Amps: " + Double.parseDouble(tv1)/1000000);
                     break;
                 case 4:
-                    currentTv.setText("Current in microamps: " + tv1);
+                    currentTv.setText("Current in Amps: " + Double.parseDouble(tv1)/1000000);
                     break;
                 case 5:
                     battStatusTv.setText("Battery status: " + tv1);
