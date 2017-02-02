@@ -9,3 +9,5 @@
 <li>How much amps is out of battery ('-'ve meanes its charging).</li>
 <li>Max amps allowed by android (May be exceeded when dash charging).</li>
 <li>Current battery state.</li>
+</ul>
+Download [link](https://www.androidfilehost.com/?fid=745425885120704976)
